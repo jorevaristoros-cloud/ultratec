@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo académico ULTRATEC">
+    <title>Catálogo | ULTRATEC</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="index.html">ULTRA<span>TEC</span></a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" aria-current="page">Catálogo</a>
+            <a href="nosotros.html">Quiénes somos</a>
+            <a href="contacto.html">Contáctanos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Catálogo de equipos</h1>
+        <p>Precios ilustrativos; no representan ofertas ni stock confirmado.</p>
+
+        <label for="marca">Filtrar por marca</label>
+
+        <select id="marca">
+            <option value="todas">Todas las marcas</option>
+        </select>
+
+        <p id="conteo" aria-live="polite"></p>
+
+        <div class="grid">
+
+            <article class="product" data-brand="Samsung">
+                <img src="img/0.svg" alt="Ilustración genérica de Samsung">
+                <small>Samsung</small>
+                <h3>Galaxy S24</h3>
+                <p>Precio referencial: S/ 2199</p>
+            </article>
+
+            <article class="product" data-brand="Xiaomi">
+                <img src="img/1.svg" alt="Ilustración genérica de Xiaomi">
+                <small>Xiaomi</small>
+                <h3>Redmi Note 13 Pro</h3>
+                <p>Precio referencial: S/ 1099</p>
+            </article>
+
+            <article class="product" data-brand="Apple">
+                <img src="img/2.svg" alt="Ilustración genérica de Apple">
+                <small>Apple</small>
+                <h3>iPhone 15</h3>
+                <p>Precio referencial: S/ 2799</p>
+            </article>
+
+            <article class="product" data-brand="REDMAGIC">
+                <img src="img/3.svg" alt="Ilustración genérica de REDMAGIC">
+                <small>REDMAGIC</small>
+                <h3>10 Pro</h3>
+                <p>Precio referencial: S/ 3299</p>
+            </article>
+
+            <article class="product" data-brand="Nubia">
+                <img src="img/4.svg" alt="Ilustración genérica de Nubia">
+                <small>Nubia</small>
+                <h3>Z60 Ultra</h3>
+                <p>Precio referencial: S/ 2499</p>
+            </article>
+
+            <article class="product" data-brand="ZTE">
+                <img src="img/5.svg" alt="Ilustración genérica de ZTE">
+                <small>ZTE</small>
+                <h3>Blade V50</h3>
+                <p>Precio referencial: S/ 599</p>
+            </article>
+
+            <article class="product" data-brand="Tecno">
+                <img src="img/6.svg" alt="Ilustración genérica de Tecno">
+                <small>Tecno</small>
+                <h3>Camon 30</h3>
+                <p>Precio referencial: S/ 799</p>
+            </article>
+
+            <article class="product" data-brand="OPPO">
+                <img src="img/7.svg" alt="Ilustración genérica de OPPO">
+                <small>OPPO</small>
+                <h3>Reno12</h3>
+                <p>Precio referencial: S/ 1499</p>
+            </article>
+
+            <article class="product" data-brand="Infinix">
+                <img src="img/8.svg" alt="Ilustración genérica de Infinix">
+                <small>Infinix</small>
+                <h3>Note 50 Pro</h3>
+                <p>Precio referencial: S/ 999</p>
+            </article>
+
+            <article class="product" data-brand="POCO">
+                <img src="img/9.svg" alt="Ilustración genérica de POCO">
+                <small>POCO</small>
+                <h3>X6 Pro</h3>
+                <p>Precio referencial: S/ 1299</p>
+            </article>
+
+            <article class="product" data-brand="Xiaomi">
+                <img src="img/10.svg" alt="Ilustración genérica de Xiaomi">
+                <small>Xiaomi</small>
+                <h3>Pad 6</h3>
+                <p>Precio referencial: S/ 1399</p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        ULTRATEC · Proyecto académico UCH · 2026-II
+    </footer>
+
+</body>
+</html>

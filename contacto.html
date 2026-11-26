@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo académico ULTRATEC">
+    <title>Contáctanos | ULTRATEC</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="index.html">ULTRA<span>TEC</span></a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="nosotros.html">Quiénes somos</a>
+            <a href="contacto.html" aria-current="page">Contáctanos</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contáctanos</h1>
+
+        <p>Formulario académico: no envía datos a la tienda.</p>
+
+        <form id="contact" autocomplete="off" novalidate>
+
+            <label>
+                Nombre
+                <input id="nombre" name="nombre"
+                       aria-describedby="error-nombre" required>
+                <small class="error" id="error-nombre"
+                       aria-live="polite"></small>
+            </label>
+
+            <label>
+                Correo
+                <input type="email" id="correo" name="correo"
+                       aria-describedby="error-correo" required>
+                <small class="error" id="error-correo"
+                       aria-live="polite"></small>
+            </label>
+
+            <label>
+                Celular
+                <input id="celular" name="celular"
+                       inputmode="tel" maxlength="9"
+                       aria-describedby="error-celular" required>
+                <small class="error" id="error-celular"
+                       aria-live="polite"></small>
+            </label>
+
+            <label>
+                Mensaje
+                <textarea id="mensaje" name="mensaje"
+                          aria-describedby="error-mensaje"
+                          required></textarea>
+                <small class="error" id="error-mensaje"
+                       aria-live="polite"></small>
+            </label>
+
+            <button type="submit">Validar consulta</button>
+
+            <p id="status" role="status"></p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        ULTRATEC · Proyecto académico UCH · 2026-II
+    </footer>
+
+</body>
+</html>
